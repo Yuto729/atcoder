@@ -11,6 +11,9 @@ int main(){
   int count = 0;
   int loop = 0;
   rep(i, n){
+    /*
+    --oo--oooooのような、oで終わり、レベルが最大のdango文字列を例外的に検出するために、if(i == n-1)以下のコードを書いた
+    */
         if (i == n-1 && s.at(n-1) == 'o' && loop >= 1){
         max_e = max(max_e, count+1);
         }
